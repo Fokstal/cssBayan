@@ -1,21 +1,53 @@
 
-  #css-bayan{
-    margin: 1rem 10rem;
+  .header{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 4rem 0.5rem 4rem;
   }
 
-  #css-bayan:hover #nameList{
+  .content{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 4rem 0.5rem 4rem;
+  }
+
+  .content:hover #nameList{
     color: inherit;
   }
 
   #mem:focus #imageMem{
-    opacity: 1;
-    height: 10rem;
-    width: 10rem;
-    transition: height 0.4s, width 0.4s, opacity 0.9s;
+    height: 35%;
+    width: 60%;
+    transition: height 0.8s, width 0.8s, padding 0.6s;
   }
 
-  #mem:focus{
+  #mem:hover #imageMem{
+    height: 35%;
+    width: 60%;
+    transition: height 0.8s, width 0.8s, padding 0.6s;
+  }
+
+  #mem:focus #nameList{
     color: blue;
+  }
+
+  #mem:focus #list{
+    margin: 2% 0 0 0;
+  }
+
+  #mem:hover #list{
+    margin: 2% 0 0 0;
+  }
+
+  #css-bayan:hover{
+    color: black;
+  }
+
+  #css-bayan:not(:hover) #mem:not(:focus) #nameList{
+    color: blue;
+  }
+  #css-bayan:not(:hover) #mem:focus #nameList{
+    color: black;
   }
 
   ul, li{
@@ -30,21 +62,21 @@
   }
 
   #nameList{
-    color: blue;
-    opacity: 0.8;
-    text-decoration: none; 
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-  }
-
-  #name{
     color: inherit;
     opacity: 0.8;
-    font-size: 4rem;
+    text-decoration: none; 
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    display: block;
+    font-size: 3rem;
+    display: flex;
+  }
+
+  .title{
+    color: inherit;
+    opacity: 0.8;
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     margin-bottom: 1.5rem;
   }
 
@@ -57,25 +89,35 @@
 
   #list{
     list-style: none;
+    margin: 0 0 0 0;
   }
 
   #imageMem{
-    opacity: 0;
     height: 0rem;
     width: 0rem;
     padding: 10 10;
-    transition: height 0.4s, width 0.5s, opacity 0.9s;
+    transition: height 0.4s, width 0.5s;
   }
 
-  #imageMem-1{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  #icon{
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0 0 auto;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+    display: flex;
   }
 
-  #mem:hover > #topMenu > li > ul > li > #imageMem{
-    opacity: 1;
-    height: 10rem;
-    width: 10rem;
-    transition: height 0.4s, width 0.4s, opacity 0.9s;
+  #mem:hover > ul > li > #testDiv > #icon{
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+  }
+
+  #mem:focus > ul > li > #testDiv > #icon{
+    transform: rotate(315deg);
+    transition: transform 0.8s;
+  }
+
+  #testDiv{
+    display: flex;
   }
