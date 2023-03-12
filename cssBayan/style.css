@@ -1,74 +1,7 @@
-
   .header{
     width: 80%;
     margin: 0 auto;
     padding: 0 4rem 0.5rem 4rem;
-  }
-
-  .content{
-    width: 80%;
-    margin: 0 auto;
-    padding: 0 4rem 0.5rem 4rem;
-  }
-
-  .content:hover #nameList{
-    color: inherit;
-  }
-
-  #mem:focus #imageMem{
-    height: 35%;
-    width: 60%;
-    transition: height 0.8s, width 0.8s, padding 0.6s;
-  }
-
-  #mem:hover #imageMem{
-    height: 35%;
-    width: 60%;
-    transition: height 0.8s, width 0.8s, padding 0.6s;
-  }
-
-  #mem:focus #nameList{
-    color: blue;
-  }
-
-  #mem:focus #list{
-    margin: 2% 0 0 0;
-  }
-
-  #mem:hover #list{
-    margin: 2% 0 0 0;
-  }
-
-  #css-bayan:hover{
-    color: black;
-  }
-
-  #css-bayan:not(:hover) #mem:not(:focus) #nameList{
-    color: blue;
-  }
-  #css-bayan:not(:hover) #mem:focus #nameList{
-    color: black;
-  }
-
-  ul, li{
-    margin: 0;
-    padding: 0;
-  }
-
-  #topMenu{
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-  }
-
-  #nameList{
-    color: inherit;
-    opacity: 0.8;
-    text-decoration: none; 
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 3rem;
-    display: flex;
   }
 
   .title{
@@ -80,44 +13,80 @@
     margin-bottom: 1.5rem;
   }
 
-  #topMenu > li > ul > li > img{
-    text-decoration: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .content{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 4rem 0.5rem 4rem;
   }
 
-  #list{
+  .content:hover .nameMeme{
+    color: inherit;
+  }
+
+  .meme:focus .imageMeme{
+    height: 35%;
+    width: 60%;
+    transition: height 0.8s, width 0.8s, padding 0.6s;
+  }
+
+  .meme:hover .imageMeme{
+    height: 35%;
+    width: 60%;
+    transition: height 0.8s, width 0.8s, padding 0.6s;
+  }
+
+  .meme:hover .icon{
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+  }
+
+  .meme:focus .icon{
+    transform: rotate(315deg);
+    transition: transform 0.8s;
+  }
+  
+  .meme:active{
+    color: blue;
+    opacity: 0.7;
+  }
+
+  ul, li{
+    margin: 0;
+    padding: 0;
     list-style: none;
-    margin: 0 0 0 0;
   }
 
-  #imageMem{
-    height: 0rem;
-    width: 0rem;
-    padding: 10 10;
-    transition: height 0.4s, width 0.5s;
+  .titleMeme{
+    display: flex;
   }
 
-  #icon{
-    height: 3rem;
-    width: 3rem;
+  .nameMeme{
+    color: inherit;
+    opacity: 0.8;
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    display: flex;
+  }
+
+  .icon{
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, ui-rounded;
+    opacity: 0.8;
     margin: 0 0 0 auto;
     transform: rotate(0deg);
     transition: transform 0.5s;
     display: flex;
   }
 
-  #mem:hover > ul > li > #testDiv > #icon{
-    transform: rotate(45deg);
-    transition: transform 0.5s;
-  }
-
-  #mem:focus > ul > li > #testDiv > #icon{
-    transform: rotate(315deg);
-    transition: transform 0.8s;
-  }
-
-  #testDiv{
+  .imageMeme{
+    height: 0rem;
+    width: 0rem;
+    padding: 0.5rem 0.5rem;
+    transition: height 0.4s, width 0.5s;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
