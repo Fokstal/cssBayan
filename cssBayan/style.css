@@ -1,7 +1,6 @@
   .header{
     width: 80%;
-    margin: 0 auto;
-    padding: 0 4rem 0.5rem 4rem;
+    margin: 0 4rem 0.5rem 4rem;
   }
 
   .title{
@@ -15,8 +14,7 @@
 
   .content{
     width: 80%;
-    margin: 0 auto;
-    padding: 0 4rem 0.5rem 4rem;
+    margin: 0 4rem 0.5rem 4rem;
     cursor: pointer;
   }
 
@@ -49,6 +47,7 @@
   .meme:active{
     color: #182ce0;
     opacity: 0.9;
+    cursor: grabbing;
   }
 
   .content:not(:hover) .meme:focus .nameMeme{
@@ -58,6 +57,11 @@
   .content:not(:hover) .nameMeme{
     color: #182ce0;
   }
+
+  .content:not(:hover) .icon{
+    display: none;
+  }
+
 
   ul, li{
     margin: 0;
