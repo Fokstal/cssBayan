@@ -84,7 +84,7 @@
     font-weight: bolder;
     font-family: Arial, Helvetica, ui-rounded;
     opacity: 0.8;
-    margin: 0 0 0 auto;
+    margin: 0 1rem 0 auto;
     transform: rotate(0deg);
     transition: transform 0.5s;
     display: flex;
